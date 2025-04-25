@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* Media Queries para Telas Diferentes */
+:root{
+  --cor-primaria: #ffda08;
+  --cor-secundaria: #089746;
+  --cor-texto: #0f0f0f;
+  --fonte-principal:'Segoe UI', sans-serif;
+  --cor-fundo: #f2f2f2;
+}
+@media screen and (min-width: 992px) {
+    .valores li:hover {
+        background-color: #333;
+        cursor: pointer;
+      }
+      .btn:hover{
+        background-color: var(--cor-secundaria);
+        transition: background-color 0.3s ease;
+      }
+}

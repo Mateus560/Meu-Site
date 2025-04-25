@@ -74,10 +74,10 @@
     transition: 1s;
   }
   
-  .btn:hover {
-    color: var(--cor-texto);
+  .btn:active {
+    transform: scale(0.95); /* Efeito de botão pressionado */
     background-color: var(--cor-secundaria);
-  }
+}
   
   .valores h3 {
     margin-top: 2rem;
@@ -94,11 +94,6 @@
     padding: 0.75rem;
     border-radius: 5px;
     color: var(--cor-fundo);
-  }
-
-  .valores li:hover {
-    background-color: #333;
-    cursor: pointer;
   }
   
   footer {
