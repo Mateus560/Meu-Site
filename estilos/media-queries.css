@@ -8,18 +8,37 @@
   --cor-fundo: #f2f2f2;
 }
 @media screen and (min-width: 992px) {
-    .valores li:hover {
-        background-color: #333;
-        cursor: pointer;
-      }
-      .btn:hover{
-        background-color: var(--cor-secundaria);
-        transition: background-color 0.3s ease;
-      }
-}
-
-@media screen and (min-width: 662px) {
-  .toggle-menu{
-    display: none;
-  }
+  .valores li:hover {
+      background-color: #333;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: var(--cor-secundaria);
+      transition: background-color 0.3s ease;
+    }
+    nav ul li{
+      margin: 0 15px;
+      display: inline;
+    }
+    .menu-toggle{
+      display: none;
+    }
+    nav .menu{
+      display: block;
+    }
+    .menu{
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+    nav .menu li a{
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 10px;
+    }
 }

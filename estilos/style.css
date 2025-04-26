@@ -19,6 +19,10 @@
     margin: auto;
   }
 
+  h2{
+    text-align: justify;
+  }
+
   p{
     text-align: justify;
   }
@@ -46,38 +50,39 @@
     background-color: var(--cor-secundaria);
   }
 
-  .toggle-menu{
+  nav .menu{
+    text-align: center;
+    display: none;
+  }
+
+  .menu-toggle{
     display: block;
     font-size: 2rem;
     cursor: pointer;
+    padding: 0px;
     user-select: none;
-    padding: 10px;
-  }
-
-  nav .menu > li{
-    display: inline;
-  }
-
-  nav .menu li a{
-    text-decoration: none;
-    color: #333;
+    text-align: center;
   }
 
   nav .menu{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    display: none;
+    flex-direction: column;
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    top: 80px;
+    left: 0;
+    text-align: center;;
   }
 
   nav .menu li a{
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px;
+    
   }
-  
+
+  nav .menu.show{
+    display: flex;
+  }
+
   h1 {
     font-size: 2rem;
     color: #089746;
