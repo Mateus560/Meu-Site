@@ -17,6 +17,7 @@
   main{
     padding: 20px;
     margin: auto;
+    flex: 1;
   }
 
   h2{
@@ -38,6 +39,7 @@
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     line-height: 1.6;
+    height: 100vh;
   }
   
   header {
