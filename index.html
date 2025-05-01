@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="estilos/style.css" />
   <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+<body class="user-is-tabbing">
 
   <header>
     <h1>Desperta Brasil</h1>
@@ -15,14 +15,14 @@
   </header>
 
   <nav>
-    <div class="menu-toggle" onclick="clickMenu()">
+    <div class="menu-toggle" tabindex="0" role="button" aria-label="Abrir menu">
       ☰
     </div>
     <ul class="menu">
       <li><a href="../index.html">Início</a></li>
       <li><a href="estrutura/sobre.html">Sobre</a></li>
-      <li><a href="estrutura/">Contato</a></li>
-      <li><a href="estrutura/">Relatos</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Relatos</a></li>
     </ul>
   </nav>
 

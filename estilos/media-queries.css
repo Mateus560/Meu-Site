@@ -1,44 +1,32 @@
 @charset "UTF-8";
 /* Media Queries para Telas Diferentes */
-:root{
-  --cor-primaria: #ffda08;
-  --cor-secundaria: #089746;
-  --cor-texto: #0f0f0f;
-  --fonte-principal:'Segoe UI', sans-serif;
-  --cor-fundo: #f2f2f2;
-}
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px), screen and (orientation: landscape) {
   .valores li:hover {
-      background-color: #333;
-      cursor: pointer;
-    }
-    .btn:hover {
-      background-color: var(--cor-secundaria);
-      transition: background-color 0.3s ease;
-    }
-    nav ul li{
-      margin: 0 15px;
-      display: inline;
-    }
-    .menu-toggle{
-      display: none;
-    }
-    nav .menu{
-      display: block;
-    }
-    .menu{
-      display: flex;
-      list-style: none;
-      gap: 30px;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-    }
-  
-    nav .menu li a{
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      padding: 10px;
-    }
+    background-color: #333;
+    cursor: pointer;
+  }
+  nav ul li{
+    margin: 0 15px;
+    display: inline;
+  }
+  .menu-toggle{
+    display: none;
+  }
+  nav .menu{
+    display: flex;
+    flex-direction: row;
+  }
+  .menu{
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  nav .menu li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+  }
 }
