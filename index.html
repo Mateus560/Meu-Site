@@ -8,25 +8,25 @@
   <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body class="user-is-tabbing">
-
+  <a href="#main-content" class="skip-links">Pular para o conteúdo principal</a>
   <header>
     <h1>Desperta Brasil</h1>
     <p class="slogan">Vozes que não serão caladas</p>
   </header>
 
-  <nav>
-    <div class="menu-toggle" tabindex="0" role="button" aria-label="Abrir menu">
+  <nav role="navigation" aria-label="Menu Principal">
+    <button class="menu-toggle" tabindex="0" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
       ☰
-    </div>
-    <ul class="menu">
-      <li><a href="../index.html">Início</a></li>
-      <li><a href="estrutura/sobre.html">Sobre</a></li>
+    </button>
+    <ul class="menu" id="menu">
+      <li><a href="../index.html" accesskey="h">Início</a></li>
+      <li><a href="estrutura/sobre.html" accesskey="s">Sobre</a></li>
       <li><a href="#">Contato</a></li>
       <li><a href="#">Relatos</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main id="main-content">
     <section class="intro">
       <h2>Aqui você encontrará falcatruas, farsas e a situação real sobre o governo brasileiro</h2>
       <p>Você também poderá contar relatos sobre o seu cotidiano frustrado com esse e os outros governos que esse país já teve.</p>

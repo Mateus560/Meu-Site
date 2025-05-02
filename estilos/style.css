@@ -1,162 +1,182 @@
 /* Mobile First */
 @charset "UTF-8";
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  :root{
-    --cor-primaria: #ffda08;
-    --cor-secundaria: #089746;
-    --cor-texto: #0f0f0f;
-    --fonte-principal:'Segoe UI', sans-serif;
-    --cor-fundo: #f2f2f2;
-    --cor-slogan: #2d4d85;
-  }
-  
-  main{
-    padding: 20px;
-    margin: auto;
-    flex: 1;
-  }
-
-  h2{
-    text-align: justify;
-  }
-
-  p{
-    text-align: justify;
-  }
-
-  html, body{
-  height: 100%;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    font-family: var(--fonte-principal);
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    line-height: 1.6;
-    height: 100vh;
-  }
-  
-  header {
-    text-align: center;
-    background-color: var(--cor-primaria);
-    box-shadow: rgba(0, 0, 0, 0.358) 0px 0px 10px;
-  }
-
-  nav{
-    background-color: var(--cor-secundaria);
-  }
-
-  nav .menu{
-    text-align: center;
-    display: none;
-  }
-
-  .menu-toggle{
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 0px;
-    user-select: none;
-    text-align: center;
-  }
-  
-  .menu-toggle:focus {
-    outline: none;
-  }  
-
-  .user-is-tabbing .menu-toggle:focus {
-    outline: 2px solid var(--cor-slogan);
-  }
-
-  nav .menu{
-    display: none;
-    flex-direction: column;
-    background-color: var(--cor-secundaria);
-    width: 100%;
-    top: 80px;
-    left: 0;
-    text-align: center;
-  }
-  
-  nav .menu.show{
-    display: flex;
-  }
-
-  nav .menu li a{
-    text-decoration: none;
-    color: var(--cor-primaria);
-  }
-
-  h1 {
-    font-size: 2rem;
-    color: #089746;
-  }
-  
-  .slogan {
-    font-style: italic;
-    color: #2d4d85;
-    margin-top: 0.5rem;
-    text-align: center;
-  }
-  
-  .intro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .intro p {
-    margin-bottom: 1.5rem;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #089746;
-    color: yellow;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 1s;
-  }
-  
-  .btn:active {
-    transform: scale(0.95); /* Efeito de botão pressionado */
-    background-color: var(--cor-secundaria);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
-  .valores h3 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .valores ul {
-    list-style: none;
-  }
-  
-  .valores li {
-    background-color: #1a1a1a;
-    margin-bottom: 0.5rem;
-    padding: 0.75rem;
-    border-radius: 5px;
-    color: var(--cor-fundo);
-  }
-  
-  footer {
-    background-color: #333;
-    padding: 15px 0;
-    margin-top: 3rem;
-    text-align: center;
-    font-size: 0.875rem;
-    color: #fff;
-  }
 
-  footer > p{
-    text-align: center;
-  }
+:root{
+  --cor-primaria: #ffda08;
+  --cor-secundaria: #089746;
+  --cor-texto: #0f0f0f;
+  --fonte-principal:'Segoe UI', sans-serif;
+  --cor-fundo: #f2f2f2;
+  --cor-slogan: #2d4d85;
+}
+
+.skip-links {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  background-color: var(--cor-primaria); /* Cor do fundo */
+  color: black; /* Cor do texto */
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 10px;
+  left: 10px;
+}
+
+main{
+  padding: 20px;
+  margin: auto;
+  flex: 1;
+}
+
+h2{
+  text-align: justify;
+}
+
+p{
+  text-align: justify;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  background-color: var(--cor-primaria);
+  box-shadow: rgba(0, 0, 0, 0.358) 0px 0px 10px;
+}
+
+nav{
+  background-color: var(--cor-secundaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+}
+
+.menu-toggle{
+  all: unset;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--cor-texto);
+  z-index: 1;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}  
+
+.user-is-tabbing .menu-toggle:focus {
+  outline: 2px solid var(--cor-slogan);
+}
+
+nav .menu{
+  flex-direction: column;
+  background-color: var(--cor-secundaria);
+  width: 100%;
+  top: 80px;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+nav .menu.show{
+  display: flex;
+  max-height: 500px;
+}
+
+nav .menu li a{
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #089746;
+}
+
+.slogan {
+  font-style: italic;
+  color: #2d4d85;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #089746;
+  color: yellow;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.btn:active {
+  transform: scale(0.95); /* Efeito de botão pressionado */
+  background-color: var(--cor-secundaria);
+}
+
+.valores h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.valores ul {
+  list-style: none;
+}
+
+.valores li {
+  background-color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  color: var(--cor-fundo);
+}
+
+footer {
+  background-color: #333;
+  padding: 15px 0;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+footer > p{
+  text-align: center;
+}
