@@ -18,6 +18,9 @@
     max-height: none;
     transition: none;
   }
+  main{
+    max-width: 70vw;
+  }
   .menu{
     list-style: none;
     gap: 30px;
@@ -30,5 +33,15 @@
     color: #333;
     font-weight: bold;
     padding: 10px;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .btn:hover{
+    text-decoration: none;
+  }
+  .cta-link:hover {
+    color: red;
+    transition: color 0.3s;
   }
 }

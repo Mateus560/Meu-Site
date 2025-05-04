@@ -1,5 +1,5 @@
-/* Mobile First */
 @charset "UTF-8";
+/* Mobile First */
 *{
   margin: 0;
   padding: 0;
@@ -19,15 +19,16 @@
   position: absolute;
   top: -40px;
   left: -40px;
-  background-color: var(--cor-primaria); /* Cor do fundo */
-  color: black; /* Cor do texto */
+  background-color: var(--cor-primaria); 
+  color: black; 
   padding: 8px;
   text-decoration: none;
   border-radius: 5px;
   z-index: 100;
 }
 
-.skip-link:focus {
+.skip-links:focus-visible {
+  color: var(--cor-primaria);
   top: 10px;
   left: 10px;
 }
@@ -44,6 +45,20 @@ h2{
 
 p{
   text-align: justify;
+}
+
+.cta-link {
+  color: var(--cor-slogan);
+  padding: 2px;
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  display: inline-block; 
+}
+
+li a{
+  text-decoration: none;
+  color: white;
 }
 
 html, body{
@@ -147,7 +162,7 @@ h1 {
 }
 
 .btn:active {
-  transform: scale(0.95); /* Efeito de botão pressionado */
+  transform: scale(0.95);
   background-color: var(--cor-secundaria);
 }
 
@@ -166,6 +181,7 @@ h1 {
   padding: 0.75rem;
   border-radius: 5px;
   color: var(--cor-fundo);
+  text-decoration: none;
 }
 
 footer {
