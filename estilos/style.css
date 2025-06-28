@@ -129,7 +129,7 @@ nav .menu li a{
   color: var(--cor-primaria);
 }
 
-h1 {
+.title {
   font-size: 2rem;
   color: #089746;
 }
